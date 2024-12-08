@@ -1,0 +1,6 @@
+# Ignore VS config
+.vs
+
+# Ignore build artifacts
+bin/
+obj/

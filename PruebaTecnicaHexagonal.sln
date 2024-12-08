@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Enterprise Business Rules", "1. Enterprise Business Rules", "{B8212697-0AA0-4494-BFB4-C6DD94CAA293}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Application Business Rules", "2. Application Business Rules", "{979C0A48-FAA8-42CE-903C-1F6810248100}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Interface Adapters", "3. Interface Adapters", "{FF97B0D0-6E60-448B-A13F-86EB25C59801}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Frameworks and Drivers", "4. Frameworks and Drivers", "{8910A4E9-1EDD-4BE9-8798-58C938492C0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaTecnicaHexagonal.Entities", "PruebaTecnicaHexagonal.Entities\PruebaTecnicaHexagonal.Entities.csproj", "{44DF6FDB-6302-412F-AFD3-C2B879CCC385}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaTecnicaHexagonal.DTOs", "PruebaTecnicaHexagonal.DTOs\PruebaTecnicaHexagonal.DTOs.csproj", "{3C7E84C4-448D-4474-B009-BB7BC635C8F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaTecnicaHexagonal.UseCases", "PruebaTecnicaHexagonal.UseCases\PruebaTecnicaHexagonal.UseCases.csproj", "{15919B68-92F8-4F1B-97AA-4FC231F598AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaTecnicaHexagonal.UseCasesPorts", "PruebaTecnicaHexagonal.UseCasesPorts\PruebaTecnicaHexagonal.UseCasesPorts.csproj", "{646BDBDB-7537-419F-9904-E60FD70FFE20}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44DF6FDB-6302-412F-AFD3-C2B879CCC385}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44DF6FDB-6302-412F-AFD3-C2B879CCC385}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44DF6FDB-6302-412F-AFD3-C2B879CCC385}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44DF6FDB-6302-412F-AFD3-C2B879CCC385}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C7E84C4-448D-4474-B009-BB7BC635C8F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C7E84C4-448D-4474-B009-BB7BC635C8F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C7E84C4-448D-4474-B009-BB7BC635C8F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C7E84C4-448D-4474-B009-BB7BC635C8F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15919B68-92F8-4F1B-97AA-4FC231F598AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15919B68-92F8-4F1B-97AA-4FC231F598AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15919B68-92F8-4F1B-97AA-4FC231F598AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15919B68-92F8-4F1B-97AA-4FC231F598AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{646BDBDB-7537-419F-9904-E60FD70FFE20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{646BDBDB-7537-419F-9904-E60FD70FFE20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{646BDBDB-7537-419F-9904-E60FD70FFE20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{646BDBDB-7537-419F-9904-E60FD70FFE20}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{44DF6FDB-6302-412F-AFD3-C2B879CCC385} = {B8212697-0AA0-4494-BFB4-C6DD94CAA293}
+		{3C7E84C4-448D-4474-B009-BB7BC635C8F2} = {979C0A48-FAA8-42CE-903C-1F6810248100}
+		{15919B68-92F8-4F1B-97AA-4FC231F598AF} = {979C0A48-FAA8-42CE-903C-1F6810248100}
+		{646BDBDB-7537-419F-9904-E60FD70FFE20} = {979C0A48-FAA8-42CE-903C-1F6810248100}
+	EndGlobalSection
+EndGlobal

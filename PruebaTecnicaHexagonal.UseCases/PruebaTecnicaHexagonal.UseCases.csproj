@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Product\" />
+    <Folder Include="Product\GetAllProducts\" />
+    <Folder Include="Product\GetProductById\" />
+    <Folder Include="Product\CreateProduct\" />
+    <Folder Include="Product\DeleteProduct\" />
+    <Folder Include="Category\" />
+    <Folder Include="Category\GetAllCategories\" />
+    <Folder Include="Category\GetCategoryById\" />
+    <Folder Include="Category\CreateCategory\" />
+    <Folder Include="Category\DeleteCategory\" />
+  </ItemGroup>
+
+</Project>
