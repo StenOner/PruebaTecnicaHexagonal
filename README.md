@@ -12,3 +12,23 @@ update-database -p PruebaTecnicaHexagonal.RepositoryEFCore -s PruebaTecnicaHexag
 ```
 
 Una vez aplicada la migracion, se podra correr el aplicativo.
+
+## Rutas
+
+Las siguientes rutas se encuentran disponibles.
+
+```bash
+GET    /api/categorias
+GET    /api/categorias/{id}
+POST   /api/categorias
+PUT    /api/categorias/{id}
+DELETE /api/categorias/{id}
+
+GET    /api/productos  (optional Parameter) categoryId
+GET    /api/productos/{id}
+POST   /api/productos
+PUT    /api/productos/{id}
+DELETE /api/productos/{id}
+
+GET    /api/reportes/categorias
+```
