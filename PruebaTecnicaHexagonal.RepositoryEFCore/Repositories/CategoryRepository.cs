@@ -1,4 +1,5 @@
-﻿using PruebaTecnicaHexagonal.Entities.Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
+using PruebaTecnicaHexagonal.Entities.Interfaces;
 using PruebaTecnicaHexagonal.Entities.POCOs;
 using PruebaTecnicaHexagonal.RepositoryEFCore.DataContext;
 
@@ -23,7 +24,7 @@ namespace PruebaTecnicaHexagonal.RepositoryEFCore.Repositories
 
         public IEnumerable<Category> GetAll()
         {
-            return _context.Categories;
+            return _context.Categories.Include(x => x.Productos);
         }
 
         public Category GetById(Guid id)

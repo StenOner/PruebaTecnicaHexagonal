@@ -9,6 +9,7 @@ using PruebaTecnicaHexagonal.UseCases.ProductUseCases.DeleteProduct;
 using PruebaTecnicaHexagonal.UseCases.ProductUseCases.GetAllProducts;
 using PruebaTecnicaHexagonal.UseCases.ProductUseCases.GetProductById;
 using PruebaTecnicaHexagonal.UseCases.ProductUseCases.UpdateProduct;
+using PruebaTecnicaHexagonal.UseCases.ReportUseCases;
 using PruebaTecnicaHexagonal.UseCasesPorts.CategoryUseCasesPorts.CreateCategory;
 using PruebaTecnicaHexagonal.UseCasesPorts.CategoryUseCasesPorts.DeleteCategory;
 using PruebaTecnicaHexagonal.UseCasesPorts.CategoryUseCasesPorts.GetAllCategories;
@@ -19,6 +20,7 @@ using PruebaTecnicaHexagonal.UseCasesPorts.ProductUseCasesPorts.DeleteProduct;
 using PruebaTecnicaHexagonal.UseCasesPorts.ProductUseCasesPorts.GetAllProducts;
 using PruebaTecnicaHexagonal.UseCasesPorts.ProductUseCasesPorts.GetProductById;
 using PruebaTecnicaHexagonal.UseCasesPorts.ProductUseCasesPorts.UpdateProduct;
+using PruebaTecnicaHexagonal.UseCasesPorts.ReportUseCasesPorts;
 
 namespace PruebaTecnicaHexagonal.UseCases
 {
@@ -37,6 +39,7 @@ namespace PruebaTecnicaHexagonal.UseCases
             services.AddTransient<IGetAllProductsInputPort, GetAllProductsInteractor>();
             services.AddTransient<IGetProductByIdInputPort, GetProductByIdInteractor>();
             services.AddTransient<IUpdateProductInputPort, UpdateProductInteractor>();
+            services.AddTransient<ICategoriesReportInputPort, CategoriesReportInteractor>();
 
             return services;
         }
