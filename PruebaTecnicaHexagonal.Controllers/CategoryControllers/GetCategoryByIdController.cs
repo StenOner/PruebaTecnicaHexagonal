@@ -5,7 +5,7 @@ using PruebaTecnicaHexagonal.UseCasesPorts.CategoryUseCasesPorts.GetCategoryById
 
 namespace PruebaTecnicaHexagonal.Controllers.CategoryControllers
 {
-    [Route("api/[controller]")]
+    [Route("api/categorias")]
     [ApiController]
     public class GetCategoryByIdController
     {
@@ -15,7 +15,7 @@ namespace PruebaTecnicaHexagonal.Controllers.CategoryControllers
         public GetCategoryByIdController(IGetCategoryByIdInputPort inputPort, IGetCategoryByIdOutputPort outputPort)
             => (_inputPort, _outputPort) = (inputPort, outputPort);
 
-        [HttpGet]
+        [HttpGet("{id}")]
         public async Task<CategoryDTO> Get(Guid id)
         {
             await _inputPort.Handle(id);

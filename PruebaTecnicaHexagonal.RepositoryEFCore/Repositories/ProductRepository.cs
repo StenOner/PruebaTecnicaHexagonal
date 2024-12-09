@@ -1,4 +1,5 @@
-﻿using PruebaTecnicaHexagonal.Entities.Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
+using PruebaTecnicaHexagonal.Entities.Interfaces;
 using PruebaTecnicaHexagonal.Entities.POCOs;
 using PruebaTecnicaHexagonal.RepositoryEFCore.DataContext;
 

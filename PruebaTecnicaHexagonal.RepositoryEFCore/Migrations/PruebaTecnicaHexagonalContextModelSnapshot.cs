@@ -74,7 +74,7 @@ namespace PruebaTecnicaHexagonal.RepositoryEFCore.Migrations
                     b.HasOne("PruebaTecnicaHexagonal.Entities.POCOs.Category", "Categoria")
                         .WithMany("Productos")
                         .HasForeignKey("CategoriaId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Categoria");

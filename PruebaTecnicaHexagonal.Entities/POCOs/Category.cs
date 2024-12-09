@@ -14,6 +14,6 @@ namespace PruebaTecnicaHexagonal.Entities.POCOs
         public string? Descripcion { get; set; }
 
         // Navigation property
-        public virtual ICollection<Product> Productos { get; set; }
+        public ICollection<Product> Productos { get; set; } = [];
     }
 }

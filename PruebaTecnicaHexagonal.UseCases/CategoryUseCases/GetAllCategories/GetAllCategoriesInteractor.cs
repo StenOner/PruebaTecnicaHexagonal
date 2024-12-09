@@ -1,5 +1,6 @@
 ﻿using PruebaTecnicaHexagonal.DTOs.CategoryDTOs;
 using PruebaTecnicaHexagonal.Entities.Interfaces;
+using PruebaTecnicaHexagonal.Entities.POCOs;
 using PruebaTecnicaHexagonal.UseCasesPorts.CategoryUseCasesPorts.GetAllCategories;
 
 namespace PruebaTecnicaHexagonal.UseCases.CategoryUseCases.GetAllCategories
@@ -14,7 +15,7 @@ namespace PruebaTecnicaHexagonal.UseCases.CategoryUseCases.GetAllCategories
 
         public Task Handle()
         {
-            IEnumerable<Entities.POCOs.Category> categories = _repository.GetAll();
+            IEnumerable<Category> categories = _repository.GetAll();
             _outputPort.Handle(categories.Select(c => new CategoryDTO
             {
                 Id = c.Id,

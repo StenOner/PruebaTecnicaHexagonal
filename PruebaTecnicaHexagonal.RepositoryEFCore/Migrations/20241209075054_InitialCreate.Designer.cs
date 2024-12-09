@@ -12,7 +12,7 @@ using PruebaTecnicaHexagonal.RepositoryEFCore.DataContext;
 namespace PruebaTecnicaHexagonal.RepositoryEFCore.Migrations
 {
     [DbContext(typeof(PruebaTecnicaHexagonalContext))]
-    [Migration("20241209005607_InitialCreate")]
+    [Migration("20241209075054_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -77,7 +77,7 @@ namespace PruebaTecnicaHexagonal.RepositoryEFCore.Migrations
                     b.HasOne("PruebaTecnicaHexagonal.Entities.POCOs.Category", "Categoria")
                         .WithMany("Productos")
                         .HasForeignKey("CategoriaId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Categoria");

@@ -1,5 +1,6 @@
 ﻿using PruebaTecnicaHexagonal.DTOs.CategoryDTOs;
 using PruebaTecnicaHexagonal.Entities.Interfaces;
+using PruebaTecnicaHexagonal.Entities.POCOs;
 using PruebaTecnicaHexagonal.UseCasesPorts.CategoryUseCasesPorts.UpdateCategory;
 
 namespace PruebaTecnicaHexagonal.UseCases.CategoryUseCases.UpdateCategory
@@ -15,7 +16,7 @@ namespace PruebaTecnicaHexagonal.UseCases.CategoryUseCases.UpdateCategory
 
         public async Task Handle(Guid id, UpdateCategoryDTO category)
         {
-            Entities.POCOs.Category categoryToUpdate = _repository.GetById(id);
+            Category categoryToUpdate = _repository.GetById(id);
 
             if (category.Nombre is not null)
             {

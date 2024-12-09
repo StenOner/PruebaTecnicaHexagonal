@@ -1,5 +1,6 @@
 ﻿using PruebaTecnicaHexagonal.DTOs.CategoryDTOs;
 using PruebaTecnicaHexagonal.Entities.Interfaces;
+using PruebaTecnicaHexagonal.Entities.POCOs;
 using PruebaTecnicaHexagonal.UseCasesPorts.CategoryUseCasesPorts.GetCategoryById;
 
 namespace PruebaTecnicaHexagonal.UseCases.CategoryUseCases.GetCategoryById
@@ -14,7 +15,7 @@ namespace PruebaTecnicaHexagonal.UseCases.CategoryUseCases.GetCategoryById
 
         public Task Handle(Guid id)
         {
-            Entities.POCOs.Category category = _repository.GetById(id);
+            Category category = _repository.GetById(id);
             _outputPort.Handle(new CategoryDTO
             {
                 Id = category.Id,

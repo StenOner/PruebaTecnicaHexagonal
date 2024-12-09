@@ -22,6 +22,6 @@ namespace PruebaTecnicaHexagonal.Entities.POCOs
         public Guid CategoriaId { get; set; }
 
         // Navigation property
-        public virtual Category Categoria { get; set; }
+        public Category Categoria { get; set; } = null!;
     }
 }

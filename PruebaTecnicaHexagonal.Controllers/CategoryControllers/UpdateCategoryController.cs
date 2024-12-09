@@ -5,7 +5,7 @@ using PruebaTecnicaHexagonal.UseCasesPorts.CategoryUseCasesPorts.UpdateCategory;
 
 namespace PruebaTecnicaHexagonal.Controllers.CategoryControllers
 {
-    [Route("api/[controller]")]
+    [Route("api/categorias")]
     [ApiController]
     public class UpdateCategoryController
     {
@@ -15,7 +15,7 @@ namespace PruebaTecnicaHexagonal.Controllers.CategoryControllers
         public UpdateCategoryController(IUpdateCategoryInputPort inputPort, IUpdateCategoryOutputPort outputPort)
             => (_inputPort, _outputPort) = (inputPort, outputPort);
 
-        [HttpPut]
+        [HttpPut("{id}")]
         public async Task<CategoryDTO> Update(Guid id, UpdateCategoryDTO category)
         {
             await _inputPort.Handle(id, category);

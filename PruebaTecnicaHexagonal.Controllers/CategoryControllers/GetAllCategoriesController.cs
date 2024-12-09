@@ -5,7 +5,7 @@ using PruebaTecnicaHexagonal.UseCasesPorts.CategoryUseCasesPorts.GetAllCategorie
 
 namespace PruebaTecnicaHexagonal.Controllers.CategoryControllers
 {
-    [Route("api/[controller]")]
+    [Route("api/categorias")]
     [ApiController]
     public class GetAllCategoriesController
     {

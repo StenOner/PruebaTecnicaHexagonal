@@ -1,5 +1,6 @@
 ﻿using PruebaTecnicaHexagonal.DTOs.CategoryDTOs;
 using PruebaTecnicaHexagonal.Entities.Interfaces;
+using PruebaTecnicaHexagonal.Entities.POCOs;
 using PruebaTecnicaHexagonal.UseCasesPorts.CategoryUseCasesPorts.CreateCategory;
 
 namespace PruebaTecnicaHexagonal.UseCases.CategoryUseCases.CreateCategory
@@ -15,7 +16,7 @@ namespace PruebaTecnicaHexagonal.UseCases.CategoryUseCases.CreateCategory
 
         public async Task Handle(CreateCategoryDTO category)
         {
-            Entities.POCOs.Category newCategory = new()
+            Category newCategory = new()
             {
                 Nombre = category.Nombre,
                 Descripcion = category.Descripcion

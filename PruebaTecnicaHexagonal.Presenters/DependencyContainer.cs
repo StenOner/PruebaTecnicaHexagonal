@@ -1,10 +1,16 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using PruebaTecnicaHexagonal.Presenters.CategoryPresenters;
+using PruebaTecnicaHexagonal.Presenters.ProductPresenters;
 using PruebaTecnicaHexagonal.UseCasesPorts.CategoryUseCasesPorts.CreateCategory;
 using PruebaTecnicaHexagonal.UseCasesPorts.CategoryUseCasesPorts.DeleteCategory;
 using PruebaTecnicaHexagonal.UseCasesPorts.CategoryUseCasesPorts.GetAllCategories;
 using PruebaTecnicaHexagonal.UseCasesPorts.CategoryUseCasesPorts.GetCategoryById;
 using PruebaTecnicaHexagonal.UseCasesPorts.CategoryUseCasesPorts.UpdateCategory;
+using PruebaTecnicaHexagonal.UseCasesPorts.ProductUseCasesPorts.CreateProduct;
+using PruebaTecnicaHexagonal.UseCasesPorts.ProductUseCasesPorts.DeleteProduct;
+using PruebaTecnicaHexagonal.UseCasesPorts.ProductUseCasesPorts.GetAllProducts;
+using PruebaTecnicaHexagonal.UseCasesPorts.ProductUseCasesPorts.GetProductById;
+using PruebaTecnicaHexagonal.UseCasesPorts.ProductUseCasesPorts.UpdateProduct;
 
 namespace PruebaTecnicaHexagonal.Presenters
 {
@@ -18,6 +24,11 @@ namespace PruebaTecnicaHexagonal.Presenters
             services.AddScoped<IGetAllCategoriesOutputPort, GetAllCategoriesPresenter>();
             services.AddScoped<IGetCategoryByIdOutputPort, GetCategoryByIdPresenter>();
             services.AddScoped<IUpdateCategoryOutputPort, UpdateCategoryPresenter>();
+            services.AddScoped<ICreateProductOutputPort, CreateProductPresenter>();
+            services.AddScoped<IDeleteProductOutputPort, DeleteProductPresenter>();
+            services.AddScoped<IGetAllProductsOutputPort, GetAllProductsPresenter>();
+            services.AddScoped<IGetProductByIdOutputPort, GetProductByIdPresenter>();
+            services.AddScoped<IUpdateProductOutputPort, UpdateProductPresenter>();
 
             return services;
         }

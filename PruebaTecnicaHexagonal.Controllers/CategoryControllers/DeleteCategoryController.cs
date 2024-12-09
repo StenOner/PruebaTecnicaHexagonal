@@ -3,7 +3,7 @@ using PruebaTecnicaHexagonal.UseCasesPorts.CategoryUseCasesPorts.DeleteCategory;
 
 namespace PruebaTecnicaHexagonal.Controllers.CategoryControllers
 {
-    [Route("api/[controller]")]
+    [Route("api/categorias")]
     [ApiController]
     public class DeleteCategoryController
     {
@@ -13,7 +13,7 @@ namespace PruebaTecnicaHexagonal.Controllers.CategoryControllers
         public DeleteCategoryController(IDeleteCategoryInputPort inputPort, IDeleteCategoryOutputPort outputPort)
             => (_inputPort, _outputPort) = (inputPort, outputPort);
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task Delete(Guid id)
         {
             await _inputPort.Handle(id);
