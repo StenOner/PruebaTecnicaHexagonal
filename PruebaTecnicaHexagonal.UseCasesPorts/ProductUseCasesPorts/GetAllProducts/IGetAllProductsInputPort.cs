@@ -2,6 +2,6 @@
 {
     public interface IGetAllProductsInputPort
     {
-        Task Handle();
+        Task Handle(Guid? categoryId);
     }
 }

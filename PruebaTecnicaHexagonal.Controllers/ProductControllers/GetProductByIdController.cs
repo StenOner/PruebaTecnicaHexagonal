@@ -7,7 +7,7 @@ namespace PruebaTecnicaHexagonal.Controllers.ProductControllers
 {
     [Route("api/productos")]
     [ApiController]
-    public class GetProductByIdController
+    public class GetProductByIdController : ControllerBase
     {
         readonly IGetProductByIdInputPort _inputPort;
         readonly IGetProductByIdOutputPort _outputPort;
@@ -16,10 +16,11 @@ namespace PruebaTecnicaHexagonal.Controllers.ProductControllers
             (_inputPort, _outputPort) = (inputPort, outputPort);
 
         [HttpGet("{id}")]
-        public async Task<ProductDTO> Get(Guid id)
+        public async Task<IActionResult> Get(Guid id)
         {
             await _inputPort.Handle(id);
-            return ((IPresenter<ProductDTO>)_outputPort).Content;
+            var content = ((IPresenter<ProductDTO>)_outputPort).Content;
+            return Ok(content);
         }
     }
 }

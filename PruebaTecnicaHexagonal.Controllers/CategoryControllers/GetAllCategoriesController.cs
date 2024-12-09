@@ -7,7 +7,7 @@ namespace PruebaTecnicaHexagonal.Controllers.CategoryControllers
 {
     [Route("api/categorias")]
     [ApiController]
-    public class GetAllCategoriesController
+    public class GetAllCategoriesController : ControllerBase
     {
         readonly IGetAllCategoriesInputPort _inputPort;
         readonly IGetAllCategoriesOutputPort _outputPort;
@@ -16,10 +16,11 @@ namespace PruebaTecnicaHexagonal.Controllers.CategoryControllers
             => (_inputPort, _outputPort) = (inputPort, outputPort);
 
         [HttpGet]
-        public async Task<IEnumerable<CategoryDTO>> GetAll()
+        public async Task<IActionResult> GetAll()
         {
             await _inputPort.Handle();
-            return ((IPresenter<IEnumerable<CategoryDTO>>)_outputPort).Content;
+            var content = ((IPresenter<IEnumerable<CategoryDTO>>)_outputPort).Content;
+            return Ok(content);
         }
     }
 }

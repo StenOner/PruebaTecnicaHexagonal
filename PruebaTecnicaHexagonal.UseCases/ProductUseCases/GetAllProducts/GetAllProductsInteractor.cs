@@ -14,9 +14,12 @@ namespace PruebaTecnicaHexagonal.UseCases.ProductUseCases.GetAllProducts
         public GetAllProductsInteractor(IProductRepository repository, IGetAllProductsOutputPort outputPort) =>
             (_repository, _outputPort) = (repository, outputPort);
 
-        public Task Handle()
+        public Task Handle(Guid? categoryId)
         {
-            IEnumerable<Product> products = _repository.GetAll();
+            IEnumerable<Product> products = categoryId is null ?
+                _repository.GetAll() :
+                _repository.GetAll().Where(x => x.CategoriaId == categoryId);
+
             _outputPort.Handle(products.Select(p => new ProductDTO
             {
                 Id = p.Id,

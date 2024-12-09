@@ -16,9 +16,9 @@ namespace PruebaTecnicaHexagonal.Controllers.ProductControllers
             (_inputPort, _outputPort) = (inputPort, outputPort);
 
         [HttpGet]
-        public async Task<IEnumerable<ProductDTO>> GetAll()
+        public async Task<IEnumerable<ProductDTO>> GetAll(Guid? categoryId)
         {
-            await _inputPort.Handle();
+            await _inputPort.Handle(categoryId);
             return ((IPresenter<IEnumerable<ProductDTO>>)_outputPort).Content;
         }
     }

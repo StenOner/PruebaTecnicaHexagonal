@@ -5,7 +5,7 @@ namespace PruebaTecnicaHexagonal.Controllers.CategoryControllers
 {
     [Route("api/categorias")]
     [ApiController]
-    public class DeleteCategoryController
+    public class DeleteCategoryController : ControllerBase
     {
         readonly IDeleteCategoryInputPort _inputPort;
         readonly IDeleteCategoryOutputPort _outputPort;
@@ -14,9 +14,10 @@ namespace PruebaTecnicaHexagonal.Controllers.CategoryControllers
             => (_inputPort, _outputPort) = (inputPort, outputPort);
 
         [HttpDelete("{id}")]
-        public async Task Delete(Guid id)
+        public async Task<IActionResult> Delete(Guid id)
         {
             await _inputPort.Handle(id);
+            return NoContent();
         }
     }
 }

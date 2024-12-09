@@ -7,19 +7,27 @@ namespace PruebaTecnicaHexagonal.Controllers.ProductControllers
 {
     [Route("api/productos")]
     [ApiController]
-    public class CreateProductController
+    public class CreateProductController : ControllerBase
     {
         readonly ICreateProductInputPort _inputPort;
         readonly ICreateProductOutputPort _outputPort;
 
-        public CreateProductController(ICreateProductInputPort inputPort, ICreateProductOutputPort outputPort)
-            => (_inputPort, _outputPort) = (inputPort, outputPort);
+        public CreateProductController(ICreateProductInputPort inputPort, ICreateProductOutputPort outputPort) =>
+            (_inputPort, _outputPort) = (inputPort, outputPort);
 
         [HttpPost]
-        public async Task<ProductDTO> Create(CreateProductDTO product)
+        public async Task<IActionResult> Create(CreateProductDTO product)
         {
-            await _inputPort.Handle(product);
-            return ((IPresenter<ProductDTO>)_outputPort).Content;
+            try
+            {
+                await _inputPort.Handle(product);
+                var content = ((IPresenter<ProductDTO>)_outputPort).Content;
+                return Ok(content);
+            }
+            catch(Exception ex)
+            {
+                return UnprocessableEntity(new { ex.Message });
+            }
         }
     }
 }

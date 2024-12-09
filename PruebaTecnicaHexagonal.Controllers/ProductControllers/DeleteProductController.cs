@@ -5,7 +5,7 @@ namespace PruebaTecnicaHexagonal.Controllers.ProductControllers
 {
     [Route("api/productos")]
     [ApiController]
-    public class DeleteProductController
+    public class DeleteProductController : ControllerBase
     {
         readonly IDeleteProductInputPort _inputPort;
         readonly IDeleteProductOutputPort _outputPort;
@@ -14,9 +14,10 @@ namespace PruebaTecnicaHexagonal.Controllers.ProductControllers
             (_inputPort, _outputPort) = (inputPort, outputPort);
 
         [HttpDelete("{id}")]
-        public async Task Delete(Guid id)
+        public async Task<IActionResult> Delete(Guid id)
         {
             await _inputPort.Handle(id);
+            return NoContent();
         }
     }
 }

@@ -7,7 +7,7 @@ namespace PruebaTecnicaHexagonal.Controllers.CategoryControllers
 {
     [Route("api/categorias")]
     [ApiController]
-    public class UpdateCategoryController
+    public class UpdateCategoryController : ControllerBase
     {
         readonly IUpdateCategoryInputPort _inputPort;
         readonly IUpdateCategoryOutputPort _outputPort;
@@ -16,10 +16,11 @@ namespace PruebaTecnicaHexagonal.Controllers.CategoryControllers
             => (_inputPort, _outputPort) = (inputPort, outputPort);
 
         [HttpPut("{id}")]
-        public async Task<CategoryDTO> Update(Guid id, UpdateCategoryDTO category)
+        public async Task<IActionResult> Update(Guid id, UpdateCategoryDTO category)
         {
             await _inputPort.Handle(id, category);
-            return ((IPresenter<CategoryDTO>)_outputPort).Content;
+            var content = ((IPresenter<CategoryDTO>)_outputPort).Content;
+            return Ok(content);
         }
     }
 }

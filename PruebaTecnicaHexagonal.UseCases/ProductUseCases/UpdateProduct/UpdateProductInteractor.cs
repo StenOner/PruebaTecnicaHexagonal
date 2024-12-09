@@ -17,6 +17,15 @@ namespace PruebaTecnicaHexagonal.UseCases.ProductUseCases.UpdateProduct
 
         public async Task Handle(Guid id, UpdateProductDTO product)
         {
+            if (product.Precio is not null && product.Precio <= 0)
+            {
+                throw new Exception("Precio debe ser mayor a 0.");
+            }
+            if (product.Precio is not null && product.Stock < 0)
+            {
+                throw new Exception("Stock no puede ser menor a 0.");
+            }
+
             Product productToUpdate = _repository.GetById(id);
 
             if (product.Nombre is not null)
