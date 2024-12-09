@@ -1,4 +1,4 @@
-﻿namespace PruebtaTecnicaHexagonal.Presenters
+﻿namespace PruebaTecnicaHexagonal.Presenters
 {
     public interface IPresenter<T>
     {

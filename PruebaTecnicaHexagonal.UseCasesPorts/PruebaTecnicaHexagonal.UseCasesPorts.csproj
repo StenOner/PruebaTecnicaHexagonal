@@ -10,4 +10,12 @@
     <ProjectReference Include="..\PruebaTecnicaHexagonal.DTOs\PruebaTecnicaHexagonal.DTOs.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Product\CreateProduct\" />
+    <Folder Include="Product\DeleteProduct\" />
+    <Folder Include="Product\GetAllProducts\" />
+    <Folder Include="Product\GetProductById\" />
+    <Folder Include="Product\UpdateProduct\" />
+  </ItemGroup>
+
 </Project>

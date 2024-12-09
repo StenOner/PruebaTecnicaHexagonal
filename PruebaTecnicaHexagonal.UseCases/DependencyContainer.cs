@@ -1,9 +1,9 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using PruebaTecnicaHexagonal.UseCases.Category.CreateCategory;
-using PruebaTecnicaHexagonal.UseCases.Category.DeleteCategory;
-using PruebaTecnicaHexagonal.UseCases.Category.GetAllCategories;
-using PruebaTecnicaHexagonal.UseCases.Category.GetCategoryById;
-using PruebaTecnicaHexagonal.UseCases.Category.UpdateCategory;
+using PruebaTecnicaHexagonal.UseCases.CategoryUseCases.CreateCategoryUseCase;
+using PruebaTecnicaHexagonal.UseCases.CategoryUseCases.DeleteCategoryUseCase;
+using PruebaTecnicaHexagonal.UseCases.CategoryUseCases.GetAllCategoriesUseCase;
+using PruebaTecnicaHexagonal.UseCases.CategoryUseCases.GetCategoryByIdUseCase;
+using PruebaTecnicaHexagonal.UseCases.CategoryUseCases.UpdateCategoryseCase;
 using PruebaTecnicaHexagonal.UseCasesPorts.Category.CreateCategory;
 using PruebaTecnicaHexagonal.UseCasesPorts.Category.DeleteCategory;
 using PruebaTecnicaHexagonal.UseCasesPorts.Category.GetAllCategories;

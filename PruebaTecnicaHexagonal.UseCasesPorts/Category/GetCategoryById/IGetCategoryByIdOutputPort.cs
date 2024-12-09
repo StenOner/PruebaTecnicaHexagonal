@@ -1,4 +1,4 @@
-﻿using PruebaTecnicaHexagonal.DTOs.Category;
+﻿using PruebaTecnicaHexagonal.DTOs.CategoryDTOs;
 
 namespace PruebaTecnicaHexagonal.UseCasesPorts.Category.GetCategoryById
 {

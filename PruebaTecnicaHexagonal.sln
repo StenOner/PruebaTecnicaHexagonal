@@ -27,7 +27,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presenters", "Presenters", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaTecnicaHexagonal.RepositoryEFCore", "PruebaTecnicaHexagonal.RepositoryEFCore\PruebaTecnicaHexagonal.RepositoryEFCore.csproj", "{06C95B3C-24D7-497A-A655-205C79FF9A33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebtaTecnicaHexagonal.Presenters", "PruebtaTecnicaHexagonal.Presenters\PruebtaTecnicaHexagonal.Presenters.csproj", "{56FBA3AF-30C6-4002-BC7B-493B94188C1A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaTecnicaHexagonal.Presenters", "PruebtaTecnicaHexagonal.Presenters\PruebaTecnicaHexagonal.Presenters.csproj", "{56FBA3AF-30C6-4002-BC7B-493B94188C1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaTecnicaHexagonal.Controllers", "PruebaTecnicaHexagonal.Controllers\PruebaTecnicaHexagonal.Controllers.csproj", "{6404F6FB-7DC8-4C4A-A853-40AE366DA5CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaTecnicaHexagonal.IoC", "PruebaTecnicaHexagonal.IoC\PruebaTecnicaHexagonal.IoC.csproj", "{3D6F99EB-938E-45CA-A60E-BFB1107489FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UIs", "UIs", "{9E6AB1DE-F766-4A2B-A547-417C8E689920}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaTecnicaHexagonal.Api", "PruebaTecnicaHexagonal.Api\PruebaTecnicaHexagonal.Api.csproj", "{565DFBBB-5784-4404-8EA6-4F1BE128D526}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +67,18 @@ Global
 		{56FBA3AF-30C6-4002-BC7B-493B94188C1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56FBA3AF-30C6-4002-BC7B-493B94188C1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56FBA3AF-30C6-4002-BC7B-493B94188C1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6404F6FB-7DC8-4C4A-A853-40AE366DA5CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6404F6FB-7DC8-4C4A-A853-40AE366DA5CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6404F6FB-7DC8-4C4A-A853-40AE366DA5CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6404F6FB-7DC8-4C4A-A853-40AE366DA5CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D6F99EB-938E-45CA-A60E-BFB1107489FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D6F99EB-938E-45CA-A60E-BFB1107489FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D6F99EB-938E-45CA-A60E-BFB1107489FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D6F99EB-938E-45CA-A60E-BFB1107489FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{565DFBBB-5784-4404-8EA6-4F1BE128D526}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{565DFBBB-5784-4404-8EA6-4F1BE128D526}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{565DFBBB-5784-4404-8EA6-4F1BE128D526}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{565DFBBB-5784-4404-8EA6-4F1BE128D526}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,5 +93,9 @@ Global
 		{CACB5634-224A-4053-A485-81021315ABC5} = {FF97B0D0-6E60-448B-A13F-86EB25C59801}
 		{06C95B3C-24D7-497A-A655-205C79FF9A33} = {C025FCF6-CEB0-4339-A11B-55CAD8BAACA6}
 		{56FBA3AF-30C6-4002-BC7B-493B94188C1A} = {CACB5634-224A-4053-A485-81021315ABC5}
+		{6404F6FB-7DC8-4C4A-A853-40AE366DA5CC} = {15F7C70D-7429-48FF-9932-730B9DED7D9E}
+		{3D6F99EB-938E-45CA-A60E-BFB1107489FD} = {C025FCF6-CEB0-4339-A11B-55CAD8BAACA6}
+		{9E6AB1DE-F766-4A2B-A547-417C8E689920} = {8910A4E9-1EDD-4BE9-8798-58C938492C0A}
+		{565DFBBB-5784-4404-8EA6-4F1BE128D526} = {9E6AB1DE-F766-4A2B-A547-417C8E689920}
 	EndGlobalSection
 EndGlobal
