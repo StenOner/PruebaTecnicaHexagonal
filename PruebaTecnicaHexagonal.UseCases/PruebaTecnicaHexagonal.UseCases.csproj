@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-	<Folder Include="CategoryUseCases\ /"
+	<Folder Include="CategoryUseCases\" />
     <Folder Include="Product\" />
     <Folder Include="Product\GetAllProducts\" />
     <Folder Include="Product\GetProductById\" />
