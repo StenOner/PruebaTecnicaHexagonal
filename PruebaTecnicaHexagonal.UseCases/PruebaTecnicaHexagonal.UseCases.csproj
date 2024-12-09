@@ -7,11 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Product\" />
-    <Folder Include="Product\GetAllProducts\" />
-    <Folder Include="Product\GetProductById\" />
-    <Folder Include="Product\CreateProduct\" />
-    <Folder Include="Product\DeleteProduct\" />
+    <Folder Include="ProductUseCases\" />
+    <Folder Include="ProductUseCases\GetAllProducts\" />
+    <Folder Include="ProductUseCases\GetProductById\" />
+    <Folder Include="ProductUseCases\CreateProduct\" />
+    <Folder Include="ProductUseCases\DeleteProduct\" />
   </ItemGroup>
 
   <ItemGroup>
