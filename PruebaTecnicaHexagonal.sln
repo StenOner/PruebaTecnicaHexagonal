@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Enterprise Business Rules", "1. Enterprise Business Rules", "{B8212697-0AA0-4494-BFB4-C6DD94CAA293}"
 EndProject
@@ -30,6 +30,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaTecnicaHexagonal.RepositoryEFCore", "PruebaTecnicaHexagonal.RepositoryEFCore\PruebaTecnicaHexagonal.RepositoryEFCore.csproj", "{06C95B3C-24D7-497A-A655-205C79FF9A33}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaTecnicaHexagonal.Presenters", "PruebaTecnicaHexagonal.Presenters\PruebaTecnicaHexagonal.Presenters.csproj", "{44446666-DF4F-4C7D-8B5C-03D905A6A5DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaTecnicaHexagonal.Controllers", "PruebaTecnicaHexagonal.Controllers\PruebaTecnicaHexagonal.Controllers.csproj", "{F2D03271-4F8A-46AC-B015-EBFF18B9F1DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +67,10 @@ Global
 		{44446666-DF4F-4C7D-8B5C-03D905A6A5DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44446666-DF4F-4C7D-8B5C-03D905A6A5DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44446666-DF4F-4C7D-8B5C-03D905A6A5DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2D03271-4F8A-46AC-B015-EBFF18B9F1DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2D03271-4F8A-46AC-B015-EBFF18B9F1DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2D03271-4F8A-46AC-B015-EBFF18B9F1DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2D03271-4F8A-46AC-B015-EBFF18B9F1DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,5 +85,6 @@ Global
 		{CACB5634-224A-4053-A485-81021315ABC5} = {FF97B0D0-6E60-448B-A13F-86EB25C59801}
 		{06C95B3C-24D7-497A-A655-205C79FF9A33} = {C025FCF6-CEB0-4339-A11B-55CAD8BAACA6}
 		{44446666-DF4F-4C7D-8B5C-03D905A6A5DA} = {CACB5634-224A-4053-A485-81021315ABC5}
+		{F2D03271-4F8A-46AC-B015-EBFF18B9F1DA} = {15F7C70D-7429-48FF-9932-730B9DED7D9E}
 	EndGlobalSection
 EndGlobal
