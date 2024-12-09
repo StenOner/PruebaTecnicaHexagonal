@@ -1,4 +1,6 @@
-﻿namespace PruebaTecnicaHexagonal.DTOs
+﻿using PruebaTecnicaHexagonal.DTOs.Category;
+
+namespace PruebaTecnicaHexagonal.DTOs.Product
 {
     public class ProductDTO
     {

@@ -12,11 +12,15 @@
     <Folder Include="Product\GetProductById\" />
     <Folder Include="Product\CreateProduct\" />
     <Folder Include="Product\DeleteProduct\" />
-    <Folder Include="Category\" />
-    <Folder Include="Category\GetAllCategories\" />
-    <Folder Include="Category\GetCategoryById\" />
-    <Folder Include="Category\CreateCategory\" />
-    <Folder Include="Category\DeleteCategory\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PruebaTecnicaHexagonal.Entities\PruebaTecnicaHexagonal.Entities.csproj" />
+    <ProjectReference Include="..\PruebaTecnicaHexagonal.UseCasesPorts\PruebaTecnicaHexagonal.UseCasesPorts.csproj" />
   </ItemGroup>
 
 </Project>

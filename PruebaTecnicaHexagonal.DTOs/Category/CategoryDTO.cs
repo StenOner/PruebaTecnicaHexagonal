@@ -1,4 +1,4 @@
-﻿namespace PruebaTecnicaHexagonal.DTOs
+﻿namespace PruebaTecnicaHexagonal.DTOs.Category
 {
     public class CategoryDTO
     {

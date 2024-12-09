@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PruebaTecnicaHexagonal.DTOs\PruebaTecnicaHexagonal.DTOs.csproj" />
+  </ItemGroup>
+
 </Project>
