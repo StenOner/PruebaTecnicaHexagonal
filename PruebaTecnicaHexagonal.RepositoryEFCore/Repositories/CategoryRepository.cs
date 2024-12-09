@@ -15,9 +15,10 @@ namespace PruebaTecnicaHexagonal.RepositoryEFCore.Repositories
         {
             _context.Add(category);
         }
+
         public void Delete(Guid id)
         {
-            _context.Remove(id);
+            _context.Remove(new Category { Id = id });
         }
 
         public IEnumerable<Category> GetAll()

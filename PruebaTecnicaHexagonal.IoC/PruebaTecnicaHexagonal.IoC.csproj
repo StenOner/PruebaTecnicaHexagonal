@@ -7,12 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\PruebaTecnicaHexagonal.Presenters\PruebaTecnicaHexagonal.Presenters.csproj" />
-    <ProjectReference Include="..\PruebaTecnicaHexagonal.UseCasesPorts\PruebaTecnicaHexagonal.UseCasesPorts.csproj" />
+    <ProjectReference Include="..\PruebaTecnicaHexagonal.RepositoryEFCore\PruebaTecnicaHexagonal.RepositoryEFCore.csproj" />
+    <ProjectReference Include="..\PruebaTecnicaHexagonal.UseCases\PruebaTecnicaHexagonal.UseCases.csproj" />
   </ItemGroup>
 
 </Project>

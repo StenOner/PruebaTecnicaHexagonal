@@ -18,7 +18,7 @@ namespace PruebaTecnicaHexagonal.RepositoryEFCore.Repositories
 
         public void Delete(Guid id)
         {
-            _context.Remove(id);
+            _context.Remove(new Product() { Id = id });
         }
 
         public IEnumerable<Product> GetAll()
